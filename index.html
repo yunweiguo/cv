@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>云为国</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
+    <script src="static/js/script.js"></script>
+</head>
+
+<body>
+    <div class="container" id="cv">
+        <div class="side">
+            <div class="me">
+                <div class="portrait" style="background-image: url(&quot;./DSC_1734--1.jpg&quot;);"></div>
+                <div class="remodal remodal-img" data-remodal-id="portrait-modal">
+                    <h3>请输入图片URL地址：</h3>
+                    <br/>
+                    <input type="text" id="avatar-url">
+                    <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+                </div>
+                <h4 id="persona-tag" >Java / Web / 互联网</h4>
+            </div>
+            <div class="profile info-unit">
+                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">基本信息</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">姓名</label><span class="label-value">云为国</span></li>
+                    <li>
+                        <label class="left-label">学历</label><span class="label-value">本科</span></li>
+                    <li>
+                        <label class="left-label">毕业院校</label><span class="label-value">北京邮电大学</span></li>
+                    <li>
+                        <label class="left-label">毕业年份</label><span class="label-value">2017</span></li>
+                </ul>
+            </div>
+            <div class="contact info-unit">
+                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title">联系方式</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">手机</label><span class="label-value">132**</span></li>
+                    <li>
+                        <label class="left-label">邮箱</label><span class="label-value">345**@qq.com</span></li>
+                </ul>
+            </div>
+            
+            <div class="stack info-unit">
+                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">技术栈</span></h2>
+                <hr>
+                <ul class="stack-list">
+                    <li>
+                        <label class="left-label">前端</label><span class="label-value">jQuery、HTML、CSS</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">后端</label><span class="label-value">Java、C/C+＋、Spring、MySQL、Redis</span></li>
+                    </li>
+                </ul>
+            </div>
+
+            
+            <div class="remodal remodal-img" data-remodal-id="weixin-modal">
+                <h3>请输入图片URL地址：</h3>
+                <br/>
+                <input type="text" id="weixin-url">
+                <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="education info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title">教育经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>北京邮电大学 -通信工程专业（本科）2013-2017</h3>
+                        <p>
+                            专业成绩排前20%
+                            <span>大学英语6级523分</span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="work info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">工作经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>中航信移动科技有限公司－Java实习生（实习）            2016-5月 -- 至今</h3>
+                        <p>
+                            <span>负责公司管理端功能的开发，使用JavaScript／JSP／CSS编写前端页面，后台使用Spring框架</span>
+                            <span>统计管理端各业务时间性能，改进后台代码以及SQL代码，提高管理端性能</span>
+                            <span>改进并统一前端页面，增加了分页模块，由于每个页面都需要返回一个对象，冗余代码过多，后期增加了泛型设计</span>
+                        </p>
+                    </li>
+                </ul class="experience-list">
+            </div>
+            <div class="project info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">个人项目</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>基于 SpringMVC 的资讯网站</h3>
+                        <p>
+                            <span>此为JavaWeb项目，共两个人完成，分别完成前端和后台两部分，本人负责后台代码</span>
+                            <span>实现了用户注册，登录，发布资讯，点赞，评论，站内信，图片上传的功能</span>
+                            <span>利用Cookie保存登录状态，并且使用ThreadLocal保存当前用户信息，便于操作</span> 
+                            <span>使用了Redis的阻塞队列，能够在点赞后异步发送站内信以及登录异常时发送邮件，并且使用多线程处理事务</span>
+                            <span>增加了七牛云的云存储功能，进行图片的存储</span>
+                            <br/>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>基于 Python 的爬虫</h3>
+                        <p>
+                            <span>利用多线程爬取了赶集网上的8w多条二手交易帖子记录，并通过MongoDB进行存储，并且对数据进行了清理</span>
+                            <span>为解决网络问题导致了中断重爬，增加了断点续传功能</span>
+                            <span>利用Django编写了Web网站，前端使用了Semantic，Highcharts，将结果展示</span>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>基于 Vaadin 的Java通讯录</h3>
+                        <p>
+                            Vaadin是一种MVC框架，实现了查询，增加，删除用户联系方式。并且在查询用户时候增加了同步查询功能
+                        </p>
+                    </li>
+                    <li>
+                        <h3>银行电商系统</h3>
+                        <p>
+                            <span>银行模块提供支付功能，商店模块提供购物模块</span>
+                            <span> 两模块之间通过Socket通信，所有信息通过文件流读写，并且写回策略保证最近执行操作的用户存储在文件的开头  </span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="trophy info-unit">
+                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">奖项与证书</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <p>连续两年获得学校三等奖学金</p>
+                    </li> 
+                    <li>
+                        <p>获得校物理竞赛三等奖</p>
+                    </li> 
+                </ul>                
+            </div>
+
+            <div class="stack info-unit">
+                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">技术栈</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <p>熟悉Java语言基础，多线程，集合，IO，具有良好的面向对象编程习惯,熟悉Spring，SpringMVC，MyBatis框架</p>
+                    </li> 
+                    <li>
+                        <p>良好的计算机基础，掌握计算机网络，操作系统，数据库等</p>
+                    </li>
+                    <li>
+                        <p>熟悉基础数据结构</p>
+                    </li>  
+                     <li>
+                        <p>了解Web前端技术，例如HTML、JS、CSS等; </p>
+                    </li> 
+                </ul>        
+            </div>
+
+            <div class="aboutme info-unit right-paragraph">
+                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">自我评价</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <span>虽然不是计算机专业的，非常热爱技术，热爱写代码，有扎实的编程基础。
+                </span>
+                </ul>        
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
