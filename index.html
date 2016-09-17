@@ -16,14 +16,14 @@
     <div class="container" id="cv">
         <div class="side">
             <div class="me">
-                <div class="portrait" style="background-image: url(&quot;./DSC_1734--1.jpg&quot;);"></div>
+                <img class="portrait" src ="./DSC_1734--1.jpg"/> 
                 <div class="remodal remodal-img" data-remodal-id="portrait-modal">
                     <h3>请输入图片URL地址：</h3>
                     <br/>
                     <input type="text" id="avatar-url">
                     <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
                 </div>
-                <h4 id="persona-tag" >Java / Web / 互联网</h4>
+                <h4 id="persona-tag" >求职意向：Java工程师</h4>
             </div>
             <div class="profile info-unit">
                 <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">基本信息</span></h2>
@@ -44,9 +44,9 @@
                 <hr>
                 <ul class="info-list">
                     <li>
-                        <label class="left-label">手机</label><span class="label-value">132**</span></li>
+                        <label class="left-label">手机</label><span class="label-value">13269628163</span></li>
                     <li>
-                        <label class="left-label">邮箱</label><span class="label-value">345**@qq.com</span></li>
+                        <label class="left-label">邮箱</label><span class="label-value">345172961@qq.com</span></li>
                 </ul>
             </div>
             
@@ -55,7 +55,7 @@
                 <hr>
                 <ul class="stack-list">
                     <li>
-                        <label class="left-label">前端</label><span class="label-value">jQuery、HTML、CSS</span></li>
+                        <label class="left-label">前端</label><span class="label-value">JavaScript、HTML、CSS</span></li>
                     </li>
                     <li>
                         <label class="left-label">后端</label><span class="label-value">Java、C/C+＋、Spring、MySQL、Redis</span></li>
@@ -86,7 +86,7 @@
                 </ul>
             </div>
             <div class="work info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">工作经历</span></h2>
+                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">实习经历</span></h2>
                 <hr>
                 <ul class="experience-list">
                     <li>
@@ -107,19 +107,19 @@
                         <h3>基于 SpringMVC 的资讯网站</h3>
                         <p>
                             <span>此为JavaWeb项目，共两个人完成，分别完成前端和后台两部分，本人负责后台代码</span>
-                            <span>实现了用户注册，登录，发布资讯，点赞，评论，站内信，图片上传的功能</span>
-                            <span>利用Cookie保存登录状态，并且使用ThreadLocal保存当前用户信息，便于操作</span> 
-                            <span>使用了Redis的阻塞队列，能够在点赞后异步发送站内信以及登录异常时发送邮件，并且使用多线程处理事务</span>
-                            <span>增加了七牛云的云存储功能，进行图片的存储</span>
+                            <span>1.用户注册时将密码与随机生成的数字合并后进行MD5加密，增加数据安全性</span>
+                            <span>2.通过Interceptor拦截器，访问页面前判断Cookie中是否存在token判断用户登录状态，并且使用ThreadLocal保存当前用户信息，实现登录功能，并且能根据登录状态决定能够访问的页面。</span> 
+                            <span>3.使用了Redis的阻塞队列，初始化后循环等待触发事件进行处理，如能够在点赞后异步发送站内信以及登录异常时发送邮件，并且使用Velocity对邮件内容进行渲染</span>
+                            <span>4.增加了七牛云的云存储功能，进行图片的存储</span>
                             <br/>
                         </p>
                     </li>
                     <li>
                         <h3>基于 Python 的爬虫</h3>
                         <p>
-                            <span>利用多线程爬取了赶集网上的8w多条二手交易帖子记录，并通过MongoDB进行存储，并且对数据进行了清理</span>
-                            <span>为解决网络问题导致了中断重爬，增加了断点续传功能</span>
-                            <span>利用Django编写了Web网站，前端使用了Semantic，Highcharts，将结果展示</span>
+                            <span>1.利用多线程爬取了赶集网上的8w多条二手交易帖子记录，并通过MongoDB进行存储，并且对数据进行了清理</span>
+                            <span>2.为解决网络问题导致了中断重爬，增加了断点续传功能</span>
+                            <span>3.利用Django编写了Web网站，前端使用了Semantic，Highcharts，将结果展示</span>
                         </p>
                     </li>
                     <li>
@@ -131,8 +131,8 @@
                     <li>
                         <h3>银行电商系统</h3>
                         <p>
-                            <span>银行模块提供支付功能，商店模块提供购物模块</span>
-                            <span> 两模块之间通过Socket通信，所有信息通过文件流读写，并且写回策略保证最近执行操作的用户存储在文件的开头  </span>
+                            <span>银行模块提供支付功能，商店模块提供购物模块.两模块之间通过Socket通信，所有信息通过文件流读写，并且写回策略保证最近执行操作的用户存储在文件的开头 </span>
+                            
                         </p>
                     </li>
                 </ul>
@@ -151,7 +151,7 @@
             </div>
 
             <div class="stack info-unit">
-                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">技术栈</span></h2>
+                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">技能水平</span></h2>
                 <hr>
                 <ul class="experience-list">
                     <li>
@@ -161,10 +161,10 @@
                         <p>良好的计算机基础，掌握计算机网络，操作系统，数据库等</p>
                     </li>
                     <li>
-                        <p>熟悉基础数据结构</p>
+                        <p>熟悉基础数据结构,具有良好的算法基础</p>
                     </li>  
                      <li>
-                        <p>了解Web前端技术，例如HTML、JS、CSS等; </p>
+                        <p>了解Web前端技术，例如HTML、JS、CSS等 </p>
                     </li> 
                 </ul>        
             </div>
@@ -173,7 +173,7 @@
                 <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">自我评价</span></h2>
                 <hr>
                 <ul class="experience-list">
-                    <span>虽然不是计算机专业的，非常热爱技术，热爱写代码，有扎实的编程基础。
+                    <span>热爱技术，热爱写代码，有扎实的编程基础
                 </span>
                 </ul>        
                 
